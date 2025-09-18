@@ -21,8 +21,7 @@ export default function Index() {
   }, []);
 
   return (
-    <main>
-      
+     <main>
       <section className="hero-section">
         <div className="hero-container">
           <h1 className="hero-title">Saúde na Tecnologia para Todos</h1>
@@ -37,6 +36,67 @@ export default function Index() {
           </button>
         </div>
       </section>
-      <main/>
+
+      <section className="benefits-section">
+        <div className="benefits-container">
+          <h2 className="benefits-title">Como podemos ajudar</h2>
+          
+          <div className="benefits-grid">
+            <div className="benefit-card">
+              <img 
+                src="interfaceImagem.jpg" 
+                alt="Ícone acessibilidade" 
+                className="benefit-icon"
+              />
+              <h3 className="benefit-title">Tela Fácil</h3>
+              <p>Botões grandes e letras fáceis de ler</p>
+            </div>
+            
+            <div className="benefit-card">
+              <img 
+                src="VideoImagem.jpg" 
+                alt="Ícone vídeo" 
+                className="benefit-icon"
+              />
+              <h3 className="benefit-title">Vídeos explicativos</h3>
+              <p>Aprenda vendo, como se alguém estivesse te ensinando</p>
+            </div>
+            
+            <div className="benefit-card">
+              <img 
+                src="BotImagem.jpg" 
+                alt="Ícone suporte" 
+                className="benefit-icon"
+              />
+              <h3 className="benefit-title">Ajuda por Telefone</h3>
+              <p>Fale com uma pessoa/robô que te explica com paciência</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="statistics-section">
+        <div className="statistics-container">
+          <h2 className="statistics-title">Nosso Impacto</h2>
+          
+          <div className="statistics-grid">
+            <div className="statistic-item">
+              <span className="statistic-value">{absenteism}%</span>
+              <span className="statistic-label">Menos faltas em consultas</span>
+            </div>
+            
+            <div className="statistic-item">
+              <span className="statistic-value">85%</span>
+              <span className="statistic-label">Pessoas satisfeitas</span>
+            </div>
+            
+            <div className="statistic-item">
+              <span className="statistic-value">1.2k</span>
+              <span className="statistic-label">Pessoas ajudadas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
