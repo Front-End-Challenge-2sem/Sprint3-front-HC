@@ -81,6 +81,30 @@ export default function Integrantes() {
             </div>
           ))}
         </div>
+        
+        <div className="sobre-projeto">
+          <h2>Sobre o Projeto</h2>
+          <div className="sobre-grid">
+            <div>
+              <h3>Objetivo</h3>
+              <p>
+                Desenvolvemos esta plataforma para facilitar o acesso à saúde
+                digital para pessoas que têm dificuldade com tecnologia,
+                oferecendo uma interface intuitiva e recursos de acessibilidade.
+              </p>
+            </div>
+
+            <div>
+              <h3>Tecnologias Utilizadas</h3>
+              <ul>
+                <li>React com TypeScript</li>
+                <li>Vite para build e desenvolvimento</li>
+                <li>Tailwind CSS para estilização</li>
+                <li>React Hook Form para validação</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         </div>
 </main>
