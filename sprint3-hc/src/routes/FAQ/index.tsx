@@ -27,6 +27,31 @@ export default function FAQ() {
       </div>
 
       <h1>Perguntas Frequentes</h1>
+
+      <div className="perguntas">
+        {listaFaq.map((item: TipoFaq) => (
+          <div
+            key={item.id}
+            className={`pergunta ${activeItem === item.id ? "ativa" : ""}`}
+          >
+            <button
+              className="pergunta-titulo"
+              onClick={() => toggleItem(item.id)}
+            >
+              {item.pergunta}
+              <span className="icone">
+                {activeItem === item.id ? "+" : "+"}
+              </span>
+            </button>
+
+            {activeItem === item.id && (
+              <div className="pergunta-resposta">
+                <p>{item.resposta}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
       </main>
   );
 }
