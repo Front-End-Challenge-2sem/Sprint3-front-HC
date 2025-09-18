@@ -15,8 +15,18 @@ export default function FAQ() {
     navigate(-1);
   };
   return(
-<main>
-    
-</main>
+    <main className="faq">
+      
+      <div className="voltar">
+        <button onClick={handleBackClick} className="botao-voltar faq-voltar">
+          <svg className="icone-voltar" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Voltar
+        </button>
+      </div>
+
+      <h1>Perguntas Frequentes</h1>
+      </main>
   );
 }
