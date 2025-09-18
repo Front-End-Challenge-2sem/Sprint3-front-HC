@@ -121,6 +121,48 @@ export default function Guia() {
           </div>
         </div>
       </section>
+
+
+      <section className="cta-guia">
+        <div className="container text-center">
+          <h2>Precisa de mais ajuda?</h2>
+          <p>
+            Nossa equipe está pronta para te auxiliar pessoalmente
+          </p>
+          <div className="botoes-cta">
+            <button onClick={handleContactClick} className="botao">
+              Fale Conosco
+            </button>
+            <button onClick={handleFaqClick} className="botao botao-secundario">
+              Ver Perguntas Frequentes
+            </button>
+          </div>
+        </div>
+      </section>
+
+  
+      <div className="dica-interativa">
+        <div className="dica-conteudo">
+          <svg
+            className="icone-dica"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <p>
+            <strong>Dica:</strong> Todos os nossos tutoriais estão disponíveis
+            em formato de vídeo. Entre em contato conosco para receber acesso
+            aos materiais completos.
+          </p>
+        </div>
+      </div>
 </main>
   );
 }
