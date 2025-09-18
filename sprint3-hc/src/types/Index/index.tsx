@@ -21,7 +21,22 @@ export default function Index() {
   }, []);
 
   return (
-    
-    <main/>
+    <main>
+      
+      <section className="hero-section">
+        <div className="hero-container">
+          <h1 className="hero-title">Saúde na Tecnologia para Todos</h1>
+          <p className="hero-subtitle">
+            Ajudamos pessoas que têm dificuldade com celulares a marcar consultas e usar a saúde na internet
+          </p>
+          <button 
+            onClick={() => navigate('/guia')}
+            className="hero-button"
+          >
+            Veja nosso Passo a Passo
+          </button>
+        </div>
+      </section>
+      <main/>
   );
 }
