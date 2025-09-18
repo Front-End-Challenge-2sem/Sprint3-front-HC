@@ -13,7 +13,6 @@ export default function Integrantes() {
   return(
 <main>
     <div className="container">
-        {/* Botão Voltar */}
         <div className="voltar">
           <button onClick={handleBackClick} className="botao-voltar integrantes-voltar">
 
@@ -33,6 +32,56 @@ export default function Integrantes() {
             Voltar
           </button>
         </div>
+
+        
+        <h1>Nossa Equipe</h1>
+        <p className="subtitulo">
+          Conheça os profissionais por trás deste projeto inovador de saúde
+          digital acessível
+        </p>
+
+        
+        <div className="membros">
+          {members.map((member) => (
+            <div key={member.id} className="membro">
+              <img
+                src={member.photo}
+                alt={`Foto de ${member.name}`}
+                className="foto-membro"
+                onError={(e) => {
+                  e.currentTarget.src =
+                    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%2320A0D8' fill-opacity='0.3'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2320A0D8'%3EImagem%3C/text%3E%3Ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2320A0D8'%3ENão%20Disponível%3C/text%3E%3C/svg%3E";
+                }}
+              />
+              <h2>{member.name}</h2>
+              <p className="detalhes">RM: {member.rm}</p>
+              <p className="detalhes">Turma: {member.turma}</p>
+
+              
+              <div className="redes-sociais">
+                <a
+                  href={member.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i className="icone-github" />
+                  <img src="/github-logo.png" alt="" />
+                </a>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <i className="icone-linkedin" />
+                  <img src="linkedin-logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
         </div>
 </main>
   )
