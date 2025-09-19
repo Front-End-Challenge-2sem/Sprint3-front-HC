@@ -432,4 +432,192 @@
   .rodape-bottom {
     @apply border-t border-blue-800 mt-8 pt-6 text-center text-sm;
   }
+
+  .passo {
+    @apply flex flex-col md:flex-row gap-8 opacity-0 translate-y-5 transition-all duration-700 ease-in-out mb-16;
+  }
+  
+  .passo-reverso {
+    @apply flex flex-col md:flex-row-reverse;
+  }
+  
+  .passo.animado {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .passo-conteudo {
+    @apply relative;
+  }
+  
+  .passo-numero {
+    @apply text-6xl font-bold text-blue-200 absolute -top-5 -left-3 -z-10;
+  }
+  
+  .passo-conteudo h3 {
+    @apply text-blue-600 text-xl mb-4;
+  }
+  
+  .passo-conteudo p {
+    @apply text-lg text-gray-600 leading-relaxed;
+  }
+  
+  .cta-guia {
+    @apply bg-blue-400 text-white py-20 px-5 text-center;
+  }
+  
+  .cta-guia h2 {
+    @apply text-3xl mb-5;
+  }
+  
+  .cta-guia p {
+    @apply text-xl mb-8;
+  }
+  
+  .botoes-cta {
+    @apply flex flex-col md:flex-row gap-5 justify-center mb-5;
+  }
+  
+  .botoes-cta .botao {
+    @apply bg-blue-700 w-full md:w-1/5 text-base;
+  }
+  
+  .botoes-cta .botao:hover {
+    @apply bg-blue-800 -translate-y-1 shadow-lg;
+  }
+  
+  .botoes-cta .botao.botao-secundario {
+    @apply border-blue-700 text-white bg-blue-600 py-3 px-5;
+  }
+  
+  .botoes-cta .botao.botao-secundario:hover {
+    @apply bg-blue-900 -translate-y-1;
+  }
+  
+  .dica-interativa {
+    @apply bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg my-10 max-w-3xl mx-auto;
+  }
+  
+  .dica-conteudo {
+    @apply flex items-start gap-4;
+  }
+  
+  .icone-dica {
+    @apply w-6 h-6 text-blue-500 flex-shrink-0;
+  }
+  
+  .dica-interativa p {
+    @apply text-blue-900;
+  }
+  
+  .destaque-guia {
+    @apply bg-gradient-to-b from-blue-500 to-blue-300 bg-cover bg-center text-white py-24 text-center;
+  }
+  
+  .destaque-guia h1 {
+    @apply text-4xl mb-5;
+  }
+  
+  .destaque-guia .subtitulo {
+    @apply text-xl max-w-3xl mx-auto text-white;
+  }
+  
+  .passos {
+    @apply py-20;
+  }
+  
+  .titulo-secao {
+    @apply text-center mb-12 text-blue-600 text-3xl;
+  }
+  
+  .video-tutorial {
+    @apply py-20 bg-gray-50 text-center;
+  }
+  
+  .video-tutorial h2 {
+    @apply mb-5 text-blue-600;
+  }
+  
+  .video-tutorial p {
+    @apply mb-8 max-w-3xl mx-auto;
+  }
+  
+  .video-container {
+    @apply relative pb-[56.25%] h-0 overflow-hidden max-w-3xl mx-auto bg-black rounded-lg;
+  }
+  
+  .video-container iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+  
+  .faq {
+    @apply py-20;
+  }
+  
+.faq h1 {
+  @apply text-center mb-12 text-blue-700 text-4xl font-bold pb-3 border-b-2 border-blue-200;
+}
+  
+  .perguntas {
+    @apply max-w-3xl mx-auto;
+  }
+  
+  .pergunta {
+    @apply mb-4 rounded-lg overflow-hidden shadow-md;
+  }
+  
+  .pergunta-titulo {
+    @apply w-full p-5 bg-white border-none text-left text-lg font-semibold text-blue-600 cursor-pointer flex justify-between items-center transition-all duration-300 ease-in-out;
+  }
+  
+  .pergunta-titulo:hover {
+    @apply bg-gray-50;
+  }
+  
+  .icone {
+    @apply text-xl;
+  }
+  
+  .pergunta-resposta {
+    @apply px-5 max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white;
+  }
+  
+  .pergunta-resposta p {
+    @apply py-5;
+  }
+  
+  .pergunta.ativa .pergunta-resposta {
+    @apply max-h-96;
+  }
+  
+  .pergunta.ativa .icone {
+    @apply rotate-45;
+  }
+  
+  .contato {
+    @apply py-20;
+  }
+  
+  .contato h1 {
+    @apply text-center mb-3 text-blue-600;
+  }
+  
+  .contato .subtitulo {
+    @apply text-center mb-12;
+  }
+  
+  .contato-conteudo {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-12;
+  }
+  
+  .contato-info h2 {
+    @apply mb-5 text-blue-600;
+  }
+  
+  .contato-info address {
+    @apply not-italic mb-8;
+  }
+  
+  .contato-info p {
+    @apply mb-3;
+  }
 }
