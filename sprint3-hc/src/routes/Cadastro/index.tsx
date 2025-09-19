@@ -18,8 +18,8 @@ export default function Cadastro() {
     alert('Cadastro realizado com sucesso! Verifique seu email para confirmar a conta.');
     navigate('/login');
   };
-  
-   const handleBackClick = () => navigate(-1);
+
+  const handleBackClick = () => navigate(-1);
 
   const formatCPF = (value: string) => {
     const numbers = value.replace(/\D/g, '');
@@ -41,9 +41,11 @@ export default function Cadastro() {
   const handleCPFChange = (e: React.ChangeEvent<HTMLInputElement>) => e.target.value = formatCPF(e.target.value);
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => e.target.value = formatPhone(e.target.value);
 
-  return(
-    <div>
-        <div className="voltar">
+  return (
+    <div className="cadastro-container">
+
+      {/* Botão Voltar */}
+      <div className="voltar">
         <button onClick={handleBackClick} className="botao-voltar">
           <svg className="icone-voltar" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -52,6 +54,7 @@ export default function Cadastro() {
         </button>
       </div>
 
+      {/* Cabeçalho */}
       <div className="login-container">
         <div className="logo-login">
           <img src="/logo_parceria_hc_jag_ajustada.png" alt="Logo Saúde Digital Acessível" />
@@ -62,6 +65,7 @@ export default function Cadastro() {
         </p>
       </div>
 
+      {/* Formulário */}
       <div className="login-form-container">
         <div className="login-card">
           <form className="form-login" onSubmit={handleSubmit(onSubmit)}>
