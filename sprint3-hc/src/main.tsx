@@ -7,6 +7,7 @@ import Error from './routes/Error/index.tsx'
 import Guia from './routes/Guia/index.tsx'
 import Integrantes from './routes/Integrantes/index.tsx'
 import FAQ from './routes/FAQ/index.tsx'
+import "tailwindcss"
 
 const router = createBrowserRouter([
   {path: "/", element: <App/>, errorElement: <Error/>, children:[
