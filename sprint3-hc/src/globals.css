@@ -24,3 +24,49 @@
     @apply max-w-full h-auto;
   }
 }
+
+@layer components {
+  .container {
+    @apply w-[90%] max-w-6xl mx-auto px-4;
+  }
+  
+  .cabecalho {
+    @apply bg-white shadow-md sticky top-0 z-50 py-4;
+  }
+  
+  .cabecalho .container {
+    @apply flex flex-col md:flex-row justify-between items-center relative;
+  }
+  
+  .logo img {
+    @apply h-12;
+  }
+  
+  .menu-toggle {
+    @apply block md:hidden bg-transparent border-none text-2xl cursor-pointer text-blue-600 absolute top-5 right-4;
+  }
+  .menu-principal ul {
+  @apply hidden md:flex list-none;
+}
+
+.menu-principal.ativo ul {
+  @apply flex flex-col md:flex-row list-none absolute md:static top-full left-0 right-0 bg-white md:bg-transparent shadow-md md:shadow-none py-4 md:py-0;
+}
+
+.menu-principal li {
+  @apply ml-5;
+}
+
+.menu-principal a {
+  @apply text-blue-600 font-medium py-1 relative;
+}
+
+.menu-principal a::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 ease-in-out;
+}
+
+.menu-principal a:hover::after {
+  @apply w-full;
+}
+}
