@@ -9,6 +9,7 @@ import Integrantes from './routes/Integrantes/index.tsx'
 import FAQ from './routes/FAQ/index.tsx'
 import "tailwindcss"
 import Contato from './routes/Contato/index.tsx'
+import Login from './routes/Login/index.tsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App/>, errorElement: <Error/>, children:[
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     {path:"/faq", element:<FAQ/>},
     {path:"/integrantes", element:<Integrantes/>},
     {path:"/guia", element:<Guia/>},
+    {path:"/login", element:<Login/>}
   ]}
 ])
 
