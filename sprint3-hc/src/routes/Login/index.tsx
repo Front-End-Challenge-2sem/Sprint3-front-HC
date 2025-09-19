@@ -75,6 +75,80 @@ const formatCPF = (value: string) => {
         </p>
       </div>
 
+      <div className="login-form-container">
+        <div className="login-card">
+          {errors.root && (
+            <div className="mensagem-erro">{errors.root.message}</div>
+          )}
+
+          <form className="form-login" onSubmit={handleSubmit(onSubmit)}>
+            <div className="campo-form">
+              <label htmlFor="cpf">CPF *</label>
+              <input
+                id="cpf"
+                type="text"
+                placeholder="000.000.000-00"
+                {...register('cpf', {
+                  required: 'CPF é obrigatório',
+                  pattern: {
+                    value: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/,
+                    message: 'CPF deve estar no formato 000.000.000-00'
+                  },
+                  minLength: {
+                    value: 14,
+                    message: 'CPF deve ter 11 dígitos'
+                  }
+                })}
+                onChange={handleCPFChange}
+              />
+              {errors.cpf && <p className="mensagem-erro">{errors.cpf.message}</p>}
+            </div>
+
+            <div className="campo-form">
+              <label htmlFor="telefone">Telefone *</label>
+              <input
+                id="telefone"
+                type="tel"
+                placeholder="(00) 00000-0000"
+                {...register('telefone', {
+                  required: 'Telefone é obrigatório',
+                  pattern: {
+                    value: /^\(\d{2}\) \d{4,5}-\d{4}$/,
+                    message: 'Telefone deve estar no formato (00) 00000-0000'
+                  }
+                })}
+                onChange={handlePhoneChange}
+              />
+              {errors.telefone && <p className="mensagem-erro">{errors.telefone.message}</p>}
+            </div>
+
+            <div className="opcoes-login">
+              <div className="lembrar-me">
+                <input id="remember-me" name="remember-me" type="checkbox" />
+                <label htmlFor="remember-me">Lembrar-me</label>
+              </div>
+              <div className="esqueceu-senha">
+                <a href="#">Esqueceu sua senha?</a>
+              </div>
+            </div>
+
+            <div>
+              <button type="submit" className="botao">Entrar</button>
+            </div>
+          </form>
+
+          <div className="cadastro-container">
+            <p>Ainda não tem conta?</p>
+            <Link to="/cadastro" className="botao-cadastre-se">Cadastre-se</Link>
+          </div>
+
+          <div className="acessibilidade-info">
+            <h3>Precisa de ajuda para acessar?</h3>
+            <p>Ligue para nossa central: <strong>(11) 2661-8500</strong></p>
+          </div>
+        </div>
+      </div>
+
         </div>
   );
 }
