@@ -684,4 +684,40 @@
   .detalhes {
     @apply text-gray-600 mb-4 text-base;
   }
+
+    .guia-voltar {
+    @apply text-white bg-blue-500 py-2 px-4 rounded-lg font-bold flex items-center gap-2 transition-all duration-300 ease-in-out;
+  }
+  
+  .guia-voltar:hover {
+    @apply text-gray-100 bg-blue-600;
+  }
+  
+  .faq-voltar {
+    @apply text-white bg-blue-500 py-2 px-4 rounded-lg font-bold flex items-center gap-2 transition-all duration-300 ease-in-out ml-0 md:ml-40;
+  }
+  
+  .faq-voltar:hover {
+    @apply bg-white text-blue-500 border border-blue-500;
+  }
+  
+  .contato-voltar {
+    @apply my-2 ml-0 md:ml-2 text-white bg-blue-500 py-2 px-4 rounded-lg font-bold flex items-center gap-2 transition-all duration-300 ease-in-out;
+  }
+  
+  .contato-voltar:hover {
+    @apply bg-white border border-blue-500;
+  }
+  
+  .integrantes-voltar {
+    @apply text-white bg-blue-500 py-2 px-4 rounded-lg font-bold flex items-center gap-2 transition-all duration-300 ease-in-out;
+  }
+  
+  .integrantes-voltar:hover {
+    @apply bg-white border border-blue-500;
+  }
+  
+  .erro {
+    @apply text-red-500 text-sm mt-1;
+  }
 }
