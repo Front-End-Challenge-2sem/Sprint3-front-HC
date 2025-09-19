@@ -8,11 +8,12 @@ import Guia from './routes/Guia/index.tsx'
 import Integrantes from './routes/Integrantes/index.tsx'
 import FAQ from './routes/FAQ/index.tsx'
 import "tailwindcss"
+import Contato from './routes/Contato/index.tsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App/>, errorElement: <Error/>, children:[
     {path:"/", element:<Index/>},
-
+    {path:"/contato", element:<Contato/>},
     {path:"/faq", element:<FAQ/>},
     {path:"/integrantes", element:<Integrantes/>},
     {path:"/guia", element:<Guia/>},
