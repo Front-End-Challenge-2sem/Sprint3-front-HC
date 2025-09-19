@@ -25,7 +25,26 @@ export default function Contato() {
   };
   return(
     <div>
-        
+        <div className="voltar">
+        <button className="botao-voltar contato-voltar" onClick={handleBackClick}>
+          <svg
+            className="icone-voltar"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            width={20}
+            height={20}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Voltar
+        </button>
+      </div>
     </div>
   )
 }
