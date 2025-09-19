@@ -149,4 +149,33 @@
   .statistic-value {
     @apply text-5xl font-bold block mb-3;
   }
+
+  .voltar {
+    @apply mb-8;
+  }
+  
+.botao-voltar {
+  @apply text-white bg-blue-500 py-2 px-4 rounded-lg font-bold flex items-center gap-2 transition-all duration-300 ease-in-out;
+}
+
+.botao-voltar:hover {
+  @apply bg-white text-blue-500 border border-blue-500 -translate-x-1 shadow-md;
+}
+
+  
+  .botao {
+    @apply bg-blue-500 text-white py-3 px-6 border-none rounded-lg cursor-pointer text-base transition-colors duration-300 ease-in-out transition-transform duration-300 ease-in-out;
+  }
+  
+  .botao:hover {
+    @apply bg-blue-700 scale-105;
+  }
+  
+  .botao-secundario {
+    @apply bg-transparent border-2 border-blue-500 ml-4 text-white transition-all duration-300 ease-in-out;
+  }
+  
+  .botao-secundario:hover {
+    @apply bg-blue-500 text-white scale-105;
+  }
 }
