@@ -149,6 +149,15 @@ const formatCPF = (value: string) => {
         </div>
       </div>
 
+      <div className="dicas-seguranca">
+        <h3>Dicas de segurança</h3>
+        <ul>
+          <li>Mantenha suas informações de login em segredo</li>
+          <li>Use uma conexão segura (HTTPS)</li>
+          <li>Desconecte-se após o uso</li>
+        </ul>
+      </div>
+
         </div>
   );
 }
