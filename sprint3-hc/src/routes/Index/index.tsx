@@ -44,7 +44,7 @@ export default function Index() {
           <div className="benefits-grid">
             <div className="benefit-card">
               <img 
-                src="interfaceImagem.jpg" 
+                src="/assets/img/interface-imagem.jpg" 
                 alt="Ícone acessibilidade" 
                 className="benefit-icon"
               />
@@ -54,7 +54,7 @@ export default function Index() {
             
             <div className="benefit-card">
               <img 
-                src="VideoImagem.jpg" 
+                src="/assets/img/video-imagem.jpg" 
                 alt="Ícone vídeo" 
                 className="benefit-icon"
               />
@@ -64,7 +64,7 @@ export default function Index() {
             
             <div className="benefit-card">
               <img 
-                src="BotImagem.jpg" 
+                src="/assets/img/bot-imagem.jpg" 
                 alt="Ícone suporte" 
                 className="benefit-icon"
               />

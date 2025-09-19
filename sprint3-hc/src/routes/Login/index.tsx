@@ -65,7 +65,7 @@ const formatCPF = (value: string) => {
       <div className="login-container">
         <div className="logo-login">
           <img 
-            src="/logo_parceria_hc_jag_ajustada.png" 
+            src="/assets/img/logo_parceria_hc_jag_ajustada.png" 
             alt="Logo Saúde Digital Acessível"
           />
         </div>

@@ -20,7 +20,7 @@ export default function Cabecalho() {
       <div className="container">
         <a href="/" className="logo">
           <img 
-            src="logo_parceria_hc_jag_ajustada.png" 
+            src="/assets/img/logo_parceria_hc_jag_ajustada.png" 
             alt="Logo Saúde Digital Acessível" 
           />
         </a>

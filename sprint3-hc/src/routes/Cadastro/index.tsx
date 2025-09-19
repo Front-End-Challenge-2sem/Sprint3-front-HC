@@ -57,7 +57,7 @@ export default function Cadastro() {
       
       <div className="login-container">
         <div className="logo-login">
-          <img src="/logo_parceria_hc_jag_ajustada.png" alt="Logo Saúde Digital Acessível" />
+          <img src="/assets/img/logo_parceria_hc_jag_ajustada.png" alt="Logo Saúde Digital Acessível" />
         </div>
         <h2 className="titulo-login">Crie sua conta</h2>
         <p className="subtitulo-login">
