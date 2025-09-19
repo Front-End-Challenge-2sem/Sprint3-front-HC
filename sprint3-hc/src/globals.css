@@ -620,4 +620,68 @@
   .contato-info p {
     @apply mb-3;
   }
+
+  .form-contato {
+    @apply bg-white p-8 rounded-lg shadow-md;
+  }
+  
+  .form-grupo {
+    @apply mb-5;
+  }
+  
+  .form-grupo label {
+    @apply block mb-2 font-medium text-blue-600;
+  }
+  
+  .form-grupo input,
+  .form-grupo select,
+  .form-grupo textarea {
+    @apply w-full p-3 border border-gray-300 rounded-lg font-sans transition-all duration-300 ease-in-out;
+  }
+  
+  .form-grupo input:focus,
+  .form-grupo select:focus,
+  .form-grupo textarea:focus {
+    @apply outline-none border-blue-500 ring-2 ring-blue-200;
+  }
+  
+  .form-grupo textarea {
+    @apply resize-y min-h-[120px];
+  }
+  
+  .equipe {
+    @apply py-20;
+  }
+  
+  .equipe h1 {
+    @apply text-center mb-3 text-blue-600 text-4xl; 
+  }
+
+  .subtitulo {
+    @apply text-center mb-12 text-2xl text-gray-600; 
+  }
+
+  .membros {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-center;
+  }
+
+  .membro {
+    @apply bg-white p-6 rounded-lg shadow-md text-center transition-all duration-300 ease-in-out w-full max-w-xs; 
+  }
+
+  .membro:hover {
+    @apply -translate-y-2 shadow-lg;
+  }
+
+  .foto-membro {
+    @apply w-36 h-36 rounded-full object-cover mx-auto mb-5 border-4 border-gray-100;
+  }
+
+  .membro h2 {
+    @apply mb-2 text-blue-600 text-xl;
+  }
+
+  .detalhes {
+    @apply text-gray-600 mb-4 text-base;
+  }
 }
