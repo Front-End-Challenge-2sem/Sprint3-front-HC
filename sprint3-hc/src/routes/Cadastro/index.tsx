@@ -44,7 +44,7 @@ export default function Cadastro() {
   return (
     <div className="cadastro-container">
 
-      {/* Botão Voltar */}
+      
       <div className="voltar">
         <button onClick={handleBackClick} className="botao-voltar">
           <svg className="icone-voltar" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ export default function Cadastro() {
         </button>
       </div>
 
-      {/* Cabeçalho */}
+      
       <div className="login-container">
         <div className="logo-login">
           <img src="/logo_parceria_hc_jag_ajustada.png" alt="Logo Saúde Digital Acessível" />
@@ -65,7 +65,7 @@ export default function Cadastro() {
         </p>
       </div>
 
-      {/* Formulário */}
+      
       <div className="login-form-container">
         <div className="login-card">
           <form className="form-login" onSubmit={handleSubmit(onSubmit)}>

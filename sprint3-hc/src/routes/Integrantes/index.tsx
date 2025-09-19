@@ -10,9 +10,11 @@ export default function Integrantes() {
   const handleBackClick = () => {
     navigate(-1); // Volta para a página anterior
   };
-  return(
-<main>
-    <div className="container">
+
+  return (
+    <main className="equipe">
+      <div className="container">
+
         <div className="voltar">
           <button onClick={handleBackClick} className="botao-voltar integrantes-voltar">
 
@@ -40,7 +42,7 @@ export default function Integrantes() {
           digital acessível
         </p>
 
-        
+       
         <div className="membros">
           {members.map((member) => (
             <div key={member.id} className="membro">
@@ -81,6 +83,7 @@ export default function Integrantes() {
             </div>
           ))}
         </div>
+
         
         <div className="sobre-projeto">
           <h2>Sobre o Projeto</h2>
@@ -105,8 +108,7 @@ export default function Integrantes() {
             </div>
           </div>
         </div>
-
-        </div>
-</main>
-  )
+      </div>
+    </main>
+  );
 }
