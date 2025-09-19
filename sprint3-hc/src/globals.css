@@ -227,4 +227,93 @@
     content: "•";
     @apply text-blue-600 font-bold inline-block w-4 -ml-4;
   }
+
+  .pagina-login {
+    @apply flex flex-col items-center p-8 bg-gray-50 min-h-screen;
+  }
+  
+  .login-container {
+    @apply text-center mb-8;
+  }
+  
+  .logo-login {
+  @apply flex justify-center items-center mb-4;
+}
+
+.logo-login img {
+  @apply max-w-[180px];
+}
+
+  
+  .titulo-login {
+    @apply text-xl font-bold mb-2 text-gray-800;
+  }
+  
+  .subtitulo-login {
+    @apply text-sm text-gray-600;
+  }
+  
+  .subtitulo-login a {
+    @apply text-blue-500 font-bold no-underline;
+  }
+  
+  .subtitulo-login a:hover {
+    @apply underline;
+  }
+  
+  .login-form-container {
+    @apply flex justify-center w-full;
+  }
+  
+  .login-card {
+    @apply bg-white rounded-xl p-8 shadow-md w-full max-w-md;
+  }
+  
+  .form-login {
+    @apply flex flex-col gap-4;
+  }
+  
+  .campo-form {
+    @apply flex flex-col;
+  }
+  
+  .campo-form label {
+    @apply text-sm mb-1 text-gray-800;
+  }
+  
+  .campo-form input {
+    @apply py-2 px-3 border border-gray-300 rounded-lg text-base outline-none transition-colors duration-200 ease-in-out;
+  }
+  
+  .campo-form input:focus {
+    @apply border-blue-500;
+  }
+  
+  .mensagem-erro {
+    @apply text-red-500 text-xs mt-1;
+  }
+  
+  .opcoes-login {
+    @apply flex justify-between items-center text-xs mb-2;
+  }
+  
+  .lembrar-me {
+    @apply flex items-center gap-1;
+  }
+  
+  .esqueceu-senha a {
+    @apply text-blue-500 no-underline;
+  }
+  
+  .esqueceu-senha a:hover {
+    @apply underline;
+  }
+  
+  .botao-cadastre-se {
+    @apply inline-block bg-blue-500 text-white font-bold rounded-lg py-3 px-4 no-underline transition-all duration-300 ease-in-out;
+  }
+  
+  .botao-cadastre-se:hover {
+    @apply bg-white text-blue-500 border border-blue-500;
+  }
 }
