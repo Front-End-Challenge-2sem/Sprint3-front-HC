@@ -126,11 +126,11 @@ projeto-saude-digital/
 │   │   ├── listaGuia.ts
 │   │   ├── listaFaq.ts
 │   │   └── listaIntegrantes.ts
-│
-├── app.tsx
-├── globals.css
-├── main.tsx
-├── vite-env.d.ts
+│   │
+│   ├── app.tsx
+│   ├── globals.css
+│   ├── main.tsx
+│   ├── vite-env.d.ts
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
