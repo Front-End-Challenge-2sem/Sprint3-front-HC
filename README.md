@@ -1,7 +1,7 @@
-# 📋 Saúde Digital Acessível
+# 📋 Grupo AGJ
 
 ## Sobre o Projeto
-O **Saúde Digital Acessível** é uma plataforma web desenvolvida para facilitar o acesso à saúde digital para pessoas que têm dificuldade com tecnologia.  
+O **Grupo AGJ** é uma plataforma web desenvolvida para facilitar o acesso à saúde digital para pessoas que têm dificuldade com tecnologia.  
 Oferecemos uma interface intuitiva, recursos de acessibilidade e suporte personalizado para ajudar usuários a marcar consultas e utilizar serviços de saúde online.
 
 ---
