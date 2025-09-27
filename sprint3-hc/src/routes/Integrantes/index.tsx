@@ -68,7 +68,7 @@ export default function Integrantes() {
                   aria-label="GitHub"
                 >
                   <i className="icone-github" />
-                  <img src="/github-logo.png" alt="" />
+                  <img src="assets/img/github-logo.png" alt="" />
                 </a>
                 <a
                   href={member.linkedin}
@@ -77,7 +77,7 @@ export default function Integrantes() {
                   aria-label="LinkedIn"
                 >
                   <i className="icone-linkedin" />
-                  <img src="linkedin-logo.png" alt="" />
+                  <img src="assets/img/linkedin-logo.png" alt="" />
                 </a>
               </div>
             </div>

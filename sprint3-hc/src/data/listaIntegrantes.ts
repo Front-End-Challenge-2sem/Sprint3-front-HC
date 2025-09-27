@@ -14,7 +14,7 @@ export const listaIntegrantes:TipoIntegrantes[] = [
         id: 2,
         name: "Gabriel Lourenço Müller",
         rm: "561995",
-        turma: "1TDSPG",
+        turma: "1TDSPO",
         photo: "/assets/img/gabriel-imagem.jpeg",
         github: "https://github.com/glMuller",
         linkedin: "https://www.linkedin.com/in/gabriel-m%C3%BCller-595020354/"
