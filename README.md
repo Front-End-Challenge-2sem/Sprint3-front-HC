@@ -138,6 +138,7 @@ projeto-saude-digital/
 ├── package.json
 ├── tsconfig.app.json
 ├── tsconfig.json
+├── tsconfig.node.json
 ├── vite.config.ts
 └── README.md
 ```
